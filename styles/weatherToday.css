@@ -1,0 +1,53 @@
+main{
+  background-color: #1E213A;
+  height: 100vh;
+}
+.figure{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.figure img{
+  width: 130px;
+  height: 155px;
+}
+.weatherTodayInfos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem
+}
+.temperature{
+  font-size: 6.5rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+.condition{
+  font-size: 2.5rem;
+  color: #88869D;
+  margin: 0.5rem;
+}
+time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dayInfos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.local{
+
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: row;
+}
+p.city{
+  color: #88869D;
+  font-weight: 300;
+}

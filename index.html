@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/weatherToday.css">
+  <link rel="stylesheet" href="./styles/general.css">
+  <title>WeatherApp</title>
+</head>
+<body>
+  <header>
+    <input type="search" placeholder="search for places">
+  </header>
+
+  <main>
+    <section class="weatherToday">
+
+      <div class="figure">
+        <img src="/assets/HeavyRain.png" alt="">
+      </div>
+
+      <div class="weatherTodayInfos">
+        <h1 class="temperature">15C</h1>
+        <h2 class="condition">Shower</h2>
+        <time>
+          <section class="dayInfos">
+          <p class="weekDay">Hoje</p>
+          <p class="day">Wed, 5 Agu</p>
+          </section>
+         
+          <section class="local">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=#88869D stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+
+          <p class="city">Ceilandia</p>
+          </section>
+        </time>
+      </div>
+    </section>
+  </main>
+
+
+  <script type="module" src="./modules/Header.js"></script>
+  <script type="module" src="./modules/WeatherToday.js"></script>
+</body>
+</html>
