@@ -24,9 +24,18 @@ main{
   margin: 1rem;
 }
 .condition{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #88869D;
   margin: 0.5rem;
+}
+.day, .weekDay{
+  color: #88869D;
+}
+.day{
+  padding: 0.5rem;
+}
+.feather-map-pin{
+ margin: 0.5rem;
 }
 time{
   display: flex;
