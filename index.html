@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/weatherToday.css">
   <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <title>WeatherApp</title>
 </head>
 <body>
@@ -17,15 +18,18 @@
     <section class="weatherToday">
 
       <div class="figure">
-        <img src="/assets/HeavyRain.png" alt="">
+        <img src="" alt="" class="tempIcon">
       </div>
 
       <div class="weatherTodayInfos">
-        <h1 class="temperature"><span class="thermometricScale"></span></h1>
+        <section class="temperatureSection">
+          <h1 class="temperature" ></h1><sub class="scale"></sub>
+          
+        </section>
         <h2 class="condition"></h2>
         <time>
           <section class="dayInfos">
-          <p class="weekDay">Hoje</p>
+          <p class="weekDay">Today</p>
           <p class="day">Wed, 5 Agu</p>
           </section>
          
@@ -36,9 +40,27 @@
           </section>
         </time>
       </div>
+
+      <section class="hightlights">
+        <h2>Today's Hightlights</h2>
+        <div>
+          <h3>Wind status</h3>
+        </div>
+        <div>
+          <h3>Humidity</h3>
+        </div>
+        <div>
+          <h3>Visibility</h3>
+        </div>
+        <div>
+          <h3>Air Pressure</h3>
+        </div>
+      </section>
     </section>
   </main>
-
+  <footer>
+    created by <a href="https://fanylouise.netlify.app" target="_blank">Fany Louise</a> - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>
+  </footer>
 
   <script src="index.js"></script>
 </body>

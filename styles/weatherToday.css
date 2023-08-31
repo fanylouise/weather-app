@@ -8,20 +8,31 @@ main{
   justify-content: center;
 }
 .figure img{
-  width: 130px;
-  height: 155px;
+  width: 150px;
+  height: 150px;
 }
 .weatherTodayInfos{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1.5rem
+  padding: 1.5rem;
 }
 .temperature{
   font-size: 6.5rem;
   font-weight: 600;
   margin: 1rem;
+  color: #E7E7EB;
+}
+.temperatureSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+sub{
+  font-size: 3rem;
+  color:#88869D ;
 }
 .condition{
   font-size: 2rem;
@@ -59,4 +70,9 @@ time{
 p.city{
   color: #88869D;
   font-weight: 300;
+}
+.hightlights{
+  padding: 1.5rem;
+  height: 100vh;
+  background-color:#100E1D;;
 }
