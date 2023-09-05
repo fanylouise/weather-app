@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="main">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="./styles/weatherToday.css">
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/hightlights.css">
   <title>WeatherApp</title>
 </head>
-<body>
+<body id="body">
   <header>
-    <input class="search" type="search" placeholder="search for places">
+    <input class="search" type="search" placeholder="teste">
+    <button class="getData">See Weather</button>
   </header>
 
   <main>
@@ -41,27 +43,43 @@
         </time>
       </div>
 
-      <section class="hightlights">
+      
+    </section>
+    <section class="hightlights">
         <h2>Today's Hightlights</h2>
-        <div>
-          <h3>Wind status</h3>
+
+        <div class="todayStats">
+            <h3>Wind status</h3>
+          <div class="wind">
+              <p class="windStat"></p>
+          </div>
+          <div>
+          </div>
         </div>
-        <div>
+        <div  class="todayStats">
           <h3>Humidity</h3>
+          <div class="humidity">
+            <p class="humidityStat"></p>
+          </div>
         </div>
-        <div>
+        <div  class="todayStats">
           <h3>Visibility</h3>
+          <div class="visibility">
+            <p class="visibilityStat"></p>
+          </div>
         </div>
-        <div>
+        <div  class="todayStats">
           <h3>Air Pressure</h3>
+          <div class="airPressure">
+            <p class="airPressureStat"></p>
+          </div>
         </div>
-      </section>
     </section>
   </main>
-  <footer>
-    created by <a href="https://fanylouise.netlify.app" target="_blank">Fany Louise</a> - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>
+ <footer>
+   <p>created by <a href="https://fanylouise.netlify.app" target="_blank">Fany Louise</a> & <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a></p> 
   </footer>
 
-  <script src="index.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
