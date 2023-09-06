@@ -5,6 +5,9 @@
   flex-direction: column;
   height: 200vh;
 }
+.hightlightsNone{
+  display: none;
+}
 .hightlights h2{
   color: #fff;
   font-size: 1.5rem; 

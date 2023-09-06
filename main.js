@@ -1,20 +1,24 @@
 
 let searchInput = document.querySelector('.search');
-let seeWeather  = document.querySelector('.getData')
+let seeWeather  = document.querySelector('.getData');
 let key = 'RN2K9W7RXKDS9HFUBNQWDL6UL';
-let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Tokyo?unitGroup=us&key=${key}`;
 let temperature = document.querySelector('.temperature');
-let condition = document.querySelector('.condition')
+let condition = document.querySelector('.condition');
 let city = document.querySelector('.city');
 let day = document.querySelector('.day');
 let thermometricScale = document.querySelector('.scale');
-let weekyDay;
 let tempIcon = document.querySelector('.tempIcon');
 let windSpped = document.querySelector('.windStat')
 let humidity = document.querySelector('.humidityStat');
 let visibility = document.querySelector('.visibilityStat');
-let airPressure = document.querySelector('.airPressureStat')
-
+let airPressure = document.querySelector('.airPressureStat');
+let header = document.getElementById('#header');
+let footer = document.getElementById('#footer');
+let weatherToday = document.getElementById('#weatherToday');
+let hightlights = document.getElementById('#hightlights');
+let main = document.getElementById('#main')
+let getDate = new Date();
+let week = document.querySelector('.week');
 let changeIcon = (weather)=>{
     switch(weather.currentConditions.icon){
     case "clear-day":
@@ -52,10 +56,16 @@ let changeIcon = (weather)=>{
       break;
 }
 }
+
 async function setData(){
- 
+
+  if(searchInput.value != '' ){
+     let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchInput.value}?unitGroup=us&key=${key}`;
+
   const response = await fetch(url);
   const weather = await response.json();
+
+  
   console.log(weather)
   
   temperature.innerHTML = Math.floor((weather.currentConditions.temp - 32) / 1.8);
@@ -66,9 +76,13 @@ async function setData(){
   windSpped.innerHTML= weather.currentConditions.windspeed + ' mph';
   humidity.innerHTML = weather.currentConditions.humidity + ' %';
   visibility.innerHTML = weather.currentConditions.visibility + ' miles';
-  airPressure.innerHTML = weather.currentConditions.pressure + ' mb'
+  airPressure.innerHTML = weather.currentConditions.pressure + ' mb';
 
-  changeIcon(weather)
+  changeIcon(weather);
+  }else{
+    alert('Please, enter the city.')
+  }
+
 }
 
 

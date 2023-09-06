@@ -8,16 +8,17 @@
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/hightlights.css">
+  <link rel="icon" type="image/x-icon" href="./assets/amcharts_weather_icons_1.0.0/static/day.svg">
   <title>WeatherApp</title>
 </head>
 <body id="body">
-  <header>
-    <input class="search" type="search" placeholder="teste">
-    <button class="getData">See Weather</button>
+  <header class="headerCenter" id="header">
+    <input class="search" type="search" placeholder="Set a valid city">
+    <a href="#weatherToday"><button class="getData">Search </button></a>
   </header>
 
-  <main>
-    <section class="weatherToday">
+  <main id="main">
+    <section class="weatherToday" id="weatherToday">
 
       <div class="figure">
         <img src="" alt="" class="tempIcon">
@@ -31,8 +32,7 @@
         <h2 class="condition"></h2>
         <time>
           <section class="dayInfos">
-          <p class="weekDay">Today</p>
-          <p class="day">Wed, 5 Agu</p>
+          <p class="day"></p>
           </section>
          
           <section class="local">
@@ -45,7 +45,11 @@
 
       
     </section>
-    <section class="hightlights">
+    <section class="week">
+      
+    </section>
+
+    <section class="hightlights" id="hightlights">
         <h2>Today's Hightlights</h2>
 
         <div class="todayStats">
@@ -76,10 +80,11 @@
         </div>
     </section>
   </main>
- <footer>
+ <footer id="footer">
    <p>created by <a href="https://fanylouise.netlify.app" target="_blank">Fany Louise</a> & <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a></p> 
   </footer>
+ 
 
-  <script src="main.js"></script>
+  <script src="main.js"></script> 
 </body>
 </html>

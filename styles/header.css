@@ -6,14 +6,38 @@ header{
     padding: 1rem;
     background-color: #1E213A;
 }
-header input{
+.headerCenter{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-image: url(/assets/amcharts_weather_icons_1.0.0/animated/day.svg);
+ background-position: 50%;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.search{
   padding: 0.5rem;
   color: #E7E7EB;
   background-color:#6E707A;
   border:none;
+  opacity: 0.8;
 }
-::placeholder{
+.search:hover{
+  cursor: text;
+}
+.search::placeholder{
   color: #E7E7EB;
   font-weight: 500;
   text-align: center;
+}
+.getData{
+  height: 2rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
 }

@@ -1,5 +1,7 @@
 main{
   background-color: #1E213A;
+  scroll-behavior: smooth;
+
 
 }
 .search:hover{
@@ -23,6 +25,9 @@ main{
 }
 .weatherToday{
   height: 100vh;
+}
+.weatherTodayNone{
+  display: none;
 }
 .temperature{
   font-size: 7rem;
