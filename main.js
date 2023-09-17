@@ -31,7 +31,8 @@ temperature, city, condition, wind speed, humidity, visibility, air pressure, an
 
 weather forecast for the week. */
 async function setData() {
-  
+
+
   if(searchInput.value != '') {
 
     let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchInput.value}?unitGroup=us&key=${key}`
@@ -45,9 +46,9 @@ async function setData() {
       (weather.currentConditions.temp - 32) / 1.8
     )
     city.innerHTML = weather.address.toUpperCase()
-    condition.innerHTML = weather.currentConditions.conditions
+    condition.innerHTML = weather.currentConditions.conditions;
     thermometricScale.innerHTML = '°C'
-    tempIcon.alt = weather.description
+    tempIcon.alt = weather.description;
     windSpeed.innerHTML = weather.currentConditions.windspeed + ' mph'
     humidity.innerHTML = weather.currentConditions.humidity + ' %'
     visibility.innerHTML = weather.currentConditions.visibility + ' miles'
@@ -71,8 +72,8 @@ async function setData() {
       </div>
       `
     }
-  } else {
-    alert('Please, enter the city.')
+  }else if(temp.icon = '') {
+    throw new Error(response.status);
   }
 }
 
