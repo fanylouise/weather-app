@@ -80,7 +80,8 @@ time{
 }
 p.city{
   color: #88869D;
-  font-weight: 300;
+  font-weight: 400;
+  font-size:2rem;
 }
 .hightlights{
   padding: 1.5rem;

@@ -1,0 +1,38 @@
+.week{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #100E1D;
+  padding: 2rem;
+}
+.weatherWeekCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1E213A;
+  width:160px;
+  height:170px;
+  padding: 0.7rem;  
+  margin:0.4rem;
+  border-radius: .2rem ;
+}
+.weatherWeekCard span{
+  color:#eef1cb;
+  font-weight: 700;
+}
+.minmax{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row
+}
+.minmax span{
+  padding: .5rem;
+
+}
+.week h3{
+  color:grey;
+}
