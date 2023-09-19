@@ -6,9 +6,10 @@ footer{
   padding: 1rem;
   color: #fff;
   background-color: #1E213A;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 footer a{
-  color: #ffffff96;
+  color:  rgb(230, 208, 15);
 }
 footer p{
   font-size: 1.5rem;

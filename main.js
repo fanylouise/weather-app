@@ -18,7 +18,8 @@ const hightlights = document.getElementById('#hightlights')
 const weatherWeekCard = document.querySelector('.weatherWeekCard')
 const week = document.querySelector('.week')
 const scroll = document.querySelector('.scroll')
-
+const main = document.querySelector('.main');
+const btn = document.querySelector('.getBtn')
 
 
  /* The `setData` function is an asynchronous function that is triggered when the user
@@ -58,9 +59,9 @@ async function setData() {
     week.innerHTML = ''
 
     for (dia of weather.days) {
-      week.innerHTML += `<div class='weatherWeekCard'>
-
-
+      weather.days.pop()
+        week.innerHTML += 
+      `<div class='weatherWeekCard'>
        <img src='${`./assets/amcharts_weather_icons_1.0.0/animated/${dia.icon}.svg`}' alt='' class='tempIcon'>;
        
       <section class='minmax'>
@@ -71,9 +72,12 @@ async function setData() {
       <h3 class='title' >${dia.datetime.slice(5.6)}</h3>
       </div>
       `
+      weather.days.pop()
     }
-  }else if(temp.icon = '') {
-    throw new Error(response.status);
+
+    main.classList.remove('none')
+  }else{
+    alert('Set a valid city.')
   }
 }
 

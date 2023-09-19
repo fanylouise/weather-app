@@ -5,21 +5,29 @@ header{
     justify-content:center;
     padding: 1rem;
     background-color: #1E213A;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+#header h1{
+  font-size: 4.5rem;
+  color: rgb(230, 208, 15);
+  text-align: center;
 }
 .headerCenter{
  display: flex;
+ flex-direction: column;
  justify-content: center;
  align-items: center;
  height: 100vh;
- background-image: url(/assets/amcharts_weather_icons_1.0.0/static/cloudy-day-3.svg);
- background-position: 50%;
- background-repeat: no-repeat;
- background-size: cover;
+}
+.serachPart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .search{
   padding: 0.5rem;
   color: #000000;
-  background-color:#7f818d;
+  background-color:#fff;
   border:none;
   opacity: 0.9;
   height: 3rem;
@@ -29,13 +37,14 @@ header{
   cursor: text;
 }
 .search::placeholder{
-  color: #000000;
-  font-weight: 500;
+  color: #000;
+  font-weight: 700;
   text-align: center;
   font-size: 1.1rem;
 }
 input[type='search']{
-  font-size: 1.2rem;
+    font-size: 1.2rem;
+   border-radius: 3px;
 }
 .getData{
   height: 3rem;
@@ -48,7 +57,10 @@ input[type='search']{
   opacity: 0.9;
   border: none;
   font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 3px;
+  transition: ease-in 0.5s ;
 }
-.getData:hover{
-  transition: background-color 0.5s ease;
+.getData{
+   background-color: rgb(230, 208, 15);
 }

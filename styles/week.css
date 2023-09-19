@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #100E1D;
-  padding: 2rem;
+  height: 80vh;
 }
 .weatherWeekCard{
   display: flex;

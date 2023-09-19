@@ -14,12 +14,15 @@
 </head>
 <body id="body">
   <header class="headerCenter" id="header">
-
-      <input class="search" type="search" placeholder="Set a valid city" aria-autocomplete="list">
-      <button type="submit" class="getData">Search </button>
+      <h1>How is the Weather?</h1>
+      <section class="serachPart">
+        <input class="search" type="search" placeholder="Set a valid city">
+        <a  class="getData">Search</a>
+      </section>
+      
   </header>
 
-  <main id="main">
+  <main id="main" class="none main">
     <section class="weatherToday" id="weatherToday">
 
       <div class="figure">
@@ -38,7 +41,7 @@
           </section>
          
           <section class="local">
-            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=#88869D stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke='rgb(230, 208, 15)' stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
 
           <p class="city"></p>
           </section>
@@ -48,7 +51,7 @@
       
     </section>
     <section class="week">
-      <img src="" alt="" class="tempIcon">
+      <h2>Week's stats</h2>
     </section>
 
     <section class="hightlights" id="hightlights">
@@ -81,6 +84,10 @@
           </div>
         </div>
     </section>
+    
+    <a class="top none" href="#header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </a>
   </main>
  <footer id="footer">
    <p>created by <a href="https://fanylouise.netlify.app" target="_blank">Fany Louise</a> & <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a></p> 
