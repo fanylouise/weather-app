@@ -63,7 +63,7 @@ async function setData() {
       
       <div class='weatherWeekCard'>
       <h3 class='dayOfMonth' >${dia.datetime.slice(5.6)}</h3>
-       <img src='${`./assets/amcharts_weather_icons_1.0.0/animated/${dia.icon}.svg`}' alt='' class='tempIcon'>;
+       <img src='${`./assets/amcharts_weather_icons_1.0.0/animated/${dia.icon}.svg`}' alt='${dia.description}' class='tempIcon'>;
        
       <section class='minmax'>
         <span class="max">${Math.floor((dia.tempmax - 32) / 1.8)} °C </span>
