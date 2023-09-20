@@ -34,11 +34,3 @@ a.top{
   padding: 10px;
   background-color:  rgb(230, 208, 15);
 }
-
-
-@media (min-width:300px)and (max-width:600px){
-  .hightlights{
-    height: 80vh;
-  }
-
-}
