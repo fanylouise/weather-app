@@ -23,9 +23,7 @@ main{
   flex-direction: column;
   padding: 1rem;
 }
-.weatherToday{
-  height: 100vh;
-}
+
 .weatherTodayNone{
   display: none;
 }
@@ -86,8 +84,11 @@ p.city{
   font-family: 'Raleway Condensed', sans-serif;
 
 }
-.hightlights{
-  padding: 1.5rem;
-  height: 100vh;
-  background-color:#100E1D;;
+
+.details{
+  background-color:  rgb(230, 208, 15);
+  color: #100E1D;
+  padding: .4rem;
+  font-weight: 500;
+  margin-top: 1rem;
 }

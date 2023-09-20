@@ -36,7 +36,9 @@ a.top{
 }
 
 
-@media (min-width:650px){
-  
+@media (min-width:300px)and (max-width:600px){
+  .hightlights{
+    height: 80vh;
+  }
 
 }

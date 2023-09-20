@@ -27,15 +27,13 @@ clicks on the "See Weather" button. It retrieves weather data from an API based 
 the value entered in the search input field. The function makes a fetch request to
 the API endpoint, waits for the response, and then parses the response as JSON. It
 then updates various elements on the page with the retrieved weather data, such as
-temperature, city, condition, wind speed, humidity, visibility, air pressure, and the
+temperature, city, condition, wind speed, humidity, visibility, air pressure, and the weather forecast for the week. */
 
 
-weather forecast for the week. */
 async function setData() {
 
-
   if(searchInput.value != '') {
-
+    
     let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchInput.value}?unitGroup=us&key=${key}`
 
     const response = await fetch(url)
@@ -57,11 +55,14 @@ async function setData() {
     tempIcon.src = `./assets/amcharts_weather_icons_1.0.0/animated/${weather.currentConditions.icon}.svg`
 
     week.innerHTML = ''
-
+    weather.days.shift()
     for (dia of weather.days) {
       weather.days.pop()
         week.innerHTML += 
-      `<div class='weatherWeekCard'>
+      `
+      
+      <div class='weatherWeekCard'>
+      <h3 class='dayOfMonth' >${dia.datetime.slice(5.6)}</h3>
        <img src='${`./assets/amcharts_weather_icons_1.0.0/animated/${dia.icon}.svg`}' alt='' class='tempIcon'>;
        
       <section class='minmax'>
@@ -69,12 +70,14 @@ async function setData() {
         <span class="min">${Math.floor((dia.tempmin - 32) / 1.8)} °C </span>
       </section>
      
-      <h3 class='title' >${dia.datetime.slice(5.6)}</h3>
+      
       </div>
       `
       weather.days.pop()
+    
     }
-
+    
+    window.location.href = '#weatherToday'
     main.classList.remove('none')
   }else{
     alert('Set a valid city.')
@@ -82,3 +85,4 @@ async function setData() {
 }
 
 seeWeather.addEventListener('click', setData)
+

@@ -4,6 +4,8 @@
   align-items: center;
   flex-direction: column;
   height: 150vh;
+  padding: 1.5rem;
+  background-color:#100E1D;
 }
 .hightlightsNone{
   display: none;

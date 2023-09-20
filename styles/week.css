@@ -1,11 +1,12 @@
 .week{
+  padding: 1rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items:  stretch;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #100E1D;
-  height: 80vh;
+  height: 30vh;
 }
 .weatherWeekCard{
   display: flex;
@@ -33,6 +34,6 @@
   padding: .5rem;
 
 }
-.week h3{
-  color:grey;
+.dayOfMonth{
+  color:  rgb(230, 208, 15);
 }
